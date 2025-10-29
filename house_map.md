@@ -174,7 +174,7 @@ title: House Map
             div.innerHTML += '<span>28% &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; 68%</span>';
             div.innerHTML += '</div>';
             
-            div.innerHTML += '<div class="litigation-marker"><div class="litigation-box"></div> Litigation-Related Election</div>';
+            div.innerHTML += '<div class="litigation-marker"><div class="litigation-box"></div> Court Ordered Election</div>';
     
             return div;
           };

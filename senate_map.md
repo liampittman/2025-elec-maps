@@ -174,7 +174,7 @@ title: Senate Map
             div.innerHTML += '<span>28% &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; 68%</span>';
             div.innerHTML += '</div>';
             
-            div.innerHTML += '<div class="litigation-marker"><div class="litigation-box"></div> Litigation-Related Election</div>';
+            div.innerHTML += '<div class="litigation-marker"><div class="litigation-box"></div> Court Ordered Election</div>';
     
             return div;
           };
@@ -215,7 +215,7 @@ title: Senate Map
                   popupContent += `Non-White Voting Age Population: ${nonWhitePercent.toFixed(1)}%<br>`;
                   
                   if (reason === 'Litigation') {
-                    popupContent += `<em>Election Type: Litigation-Related</em><br>`;
+                    popupContent += `<em>Election Type: Court Ordered</em><br>`;
                   } else if (reason === 'Regular Special Election') {
                     popupContent += `<em>Election Type: Regular Special Election</em><br>`;
                   }
