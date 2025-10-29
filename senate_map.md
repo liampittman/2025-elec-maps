@@ -245,7 +245,7 @@ title: Senate Map
                   
                   // Add link to story if available
                   if (props.link && props.link !== null && props.link !== '') {
-                    popupContent += `<br>For more information about this district's special election, read the story <a href="${props.link}" target="_blank">here</a>.`;
+                    popupContent += `<br>For more information about this district's special election, click <a href="${props.link}" target="_blank">here</a>.`;
                   }
                 } else {
                   popupContent += `No special election`;
