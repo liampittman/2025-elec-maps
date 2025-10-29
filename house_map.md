@@ -215,7 +215,7 @@ title: House Map
                 popupContent += `Non-White Voting Age Population: ${nonWhitePercent.toFixed(1)}%<br>`;
                 
                 if (reason === 'Litigation') {
-                  popupContent += `<em>Election Type: Litigation-Related</em><br>`;
+                  popupContent += `<em>Election Type: Court Ordered</em><br>`;
                 } else if (reason === 'Regular Special Election') {
                   popupContent += `<em>Election Type: Regular Special Election</em><br>`;
                 }
