@@ -182,7 +182,10 @@ title: Senate Map
           legend.addTo(map);
         }
       // Initialize Senate Map
-      const senateMap = L.map('senate-map').setView([32.3547, -89.3985], 7);
+      const senateMap = L.map('senate-map', {
+        scrollWheelZoom: false,
+        zoomControl: true
+      }).setView([32.3547, -89.3985], 7);
       
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; OpenStreetMap contributors'
