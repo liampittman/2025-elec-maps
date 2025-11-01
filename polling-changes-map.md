@@ -71,7 +71,7 @@ function onEachFeature(feature, layer) {
 }
 
 // Load your county GeoJSON and add to map
-fetch('/assets/data/ms-counties.geojson')
+fetch('./assets/data/ms-counties.geojson')
     .then(response => response.json())
     .then(data => {    
         L.geoJSON(data, {
