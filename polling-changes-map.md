@@ -12,7 +12,7 @@ title: Mississippi Polling Place Changes - 2025 Special Election
 // Counties with polling place changes (from your CSV data)
 const changedCounties = [
   "Bolivar",
-  "Desoto",
+  "DeSoto",
   "Forrest",
   "Hinds",
   "Madison",
@@ -71,9 +71,9 @@ function onEachFeature(feature, layer) {
 }
 
 // Load your county GeoJSON and add to map
-fetch('/assets/data/ms-counites.geojson')
+fetch('/assets/data/ms-counties.geojson')
     .then(response => response.json())
-        
+    .then(data => {    
         L.geoJSON(data, {
             style: style,
             onEachFeature: onEachFeature
