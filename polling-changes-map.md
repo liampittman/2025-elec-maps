@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function getColor(value) {
       // Purples: interpolate from #f2e7fa to #6c0175 (light to deep purple)
       // Clamp and normalize for real values
-      var min = 0, max = 100;
+      var min = 1, max = 9;
       var v = Math.max(min, Math.min(max, value == null ? min : value));
       var t = (v-min)/(max-min);
       // Linear interpolation RGB
