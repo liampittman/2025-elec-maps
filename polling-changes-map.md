@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function() {
       attribution: '&copy; OpenStreetMap contributors'
     }).addTo(map);
 
-    fetch('/assets/data/ms-counties.geojson')
+    fetch('2025-elec-maps/assets/data/ms-counties.geojson')
       .then(res => res.json())
       .then(data => {
         var counties = L.geoJSON(data, {
