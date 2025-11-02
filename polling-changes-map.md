@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function countyStyle(feature) {
-      var t = feature.properties.total || 0;
+      var t = parseFloat(feature.properties.total);
       return {
         fillColor: getColor(t),
         weight: 1,
